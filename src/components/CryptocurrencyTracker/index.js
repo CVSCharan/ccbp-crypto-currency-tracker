@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Loader from "react-loader-spinner";
+import { TailSpin } from "react-loader-spinner";
 
 import CryptocurrenciesList from "../CryptocurrenciesList";
 
@@ -41,7 +41,7 @@ class CryptocurrencyTracker extends Component {
 
   renderLoader = () => (
     <div testid="loader">
-      <Loader type="Rings" color="#ffffff" height={80} width={80} />
+      <TailSpin type="Rings" color="#ffffff" height={80} width={80} />
     </div>
   );
 
